@@ -3,25 +3,209 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Altibbe - Modern Healthcare Platform</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
+    <script src="main.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/a076d05399.js"
-      crossorigin="anonymous"
-    ></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    
   </head>
   <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <h1 class="logo">Altibbe</h1>
+        <nav class="nav" id="navbar">
+          <ul class="nav-links">
+            <li class="close-btn"><span id="close-menu">&times;</span></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+          </div>
+        </nav>
+      </div>
+    </header>
 
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <!-- <video autoplay muted loop class="hero-bg">
+        <source src="assets/images/background-img.jpg" type="video/mp4" />
+      </video> -->
+
+      <img src="assets/images/services-img.jpg" alt="" class="hero-img" />
+
+      <div class="hero-content" data-aos="fade-up">
+        <h2>Your Health, Our Priority</h2>
+        <p>Modern healthcare solutions powered by technology</p>
+        <a href="#services" class="btn">Explore Services</a>
+      </div>
+    </section>
+
+    <!-- About  Section -->
+    <section class="about-section" id="about">
+      <div class="container about-content" data-aos="fade-up">
+        <div class="about-text">
+          <h3>About Altibbe</h3>
+          <p>
+            At <strong>Altibbe</strong>, we are redefining modern healthcare by
+            integrating technology with compassion. From telemedicine and
+            digital health records to 24/7 care support, we provide
+            personalized, accessible, and secure health solutions — anytime,
+            anywhere.
+          </p>
+          <p>
+            Our mission is to bridge the gap between patients and quality care
+            by using cutting-edge tools and a human-first approach. With a
+            commitment to privacy, innovation, and affordability, Altibbe
+            empowers individuals to take control of their well-being.
+          </p>
+          <a href="#services" class="btn learn-more">Explore Our Services</a>
+        </div>
+        <div class="about-image" data-aos="zoom-in">
+          <img src="assets/images/about-healthcare.jpg" alt="About Altibbe" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+      <div class="container">
+        <h3 data-aos="fade-up">Our Services</h3>
+        <div class="card-container">
+          <div class="card" data-aos="zoom-in" data-aos-delay="100">
+            <i class="fas fa-user-md"></i>
+            <h4>Telemedicine</h4>
+            <p>Connect with certified doctors anytime, anywhere.</p>
+          </div>
+          <div class="card" data-aos="zoom-in" data-aos-delay="270">
+            <i class="fas fa-pills"></i>
+            <h4>Pharmacy Delivery</h4>
+            <p>Get medicines delivered to your doorstep safely and fast.</p>
+          </div>
+          <div class="card" data-aos="zoom-in" data-aos-delay="400">
+            <i class="fas fa-notes-medical"></i>
+            <h4>Health Records</h4>
+            <p>Secure cloud-based access to your medical history.</p>
+          </div>
+          <div class="card" data-aos="zoom-in" data-aos-delay="380">
+            <i class="fas fa-vials"></i>
+            <h4>Online Lab Tests</h4>
+            <p>Book diagnostics and lab tests from the comfort of your home.</p>
+          </div>
+          <div class="card" data-aos="zoom-in" data-aos-delay="700">
+            <i class="fas fa-robot"></i>
+            <h4>AI Health Assistant</h4>
+            <p>Get instant answers to common health questions using AI.</p>
+          </div>
+          <div class="card" data-aos="zoom-in" data-aos-delay="850">
+            <i class="fas fa-dumbbell"></i>
+            <h4>Fitness & Wellness</h4>
+            <p>
+              Personalized fitness, diet, and wellness programs for a healthier
+              you.
+            </p>
+          </div>
+          <div class="card" data-aos="zoom-in" data-aos-delay="550">
+            <i class="fas fa-ambulance"></i>
+            <h4>24/7 Emergency</h4>
+            <p>
+              Get round-the-clock emergency health support and ambulance
+              booking.
+            </p>
+          </div>
+          <div class="card" data-aos="zoom-in" data-aos-delay="900">
+            <i class="fas fa-brain"></i>
+            <h4>Mental Health</h4>
+            <p>Talk to certified mental health professionals confidentially.</p>
+          </div>
+          <div class="card" data-aos="zoom-in" data-aos-delay="1000">
+            <i class="fas fa-file-medical-alt"></i>
+            <h4>EHR Integration</h4>
+            <p>Securely connect with hospitals and sync your health records.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+      <div class="container" data-aos="fade-up">
+        <h3>Contact Us</h3>
+        <form>
+          <input type="text" placeholder="Name" required />
+          <input type="email" placeholder="Email" required />
+          <textarea placeholder="Your message" required></textarea>
+          <button class="btn" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+    
+    <!-- footer -->
+    <footer class="footer" id="footer">
+      <div class="container footer-content" >
+        <div class="footer-col" data-aos="fade-up">
+          <h4>Altibbe</h4>
+          <p>
+            Altibbe is a next-gen healthcare platform offering digital medical
+            services, from teleconsultations to pharmacy deliveries — all in one
+            place.
+          </p>
+          <div class="footer-social" data-aos="fade-right">
+            <h4>Follow Us</h4>
+            <ul>
+              <li><a href="#"><i class="fab fa-facebook-f"></i>facebook</a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i>twitter</a></li>
+              <li><a href="#"><i class="fab fa-linkedin-in"></i>linkedin</a></li>
+              <li><a href="#"><i class="fab fa-youtube"></i>youtube</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-col" data-aos="fade-right">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col" data-aos="fade-right">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Telemedicine</a></li>
+            <li><a href="#">Pharmacy Delivery</a></li>
+            <li><a href="#">Lab Tests</a></li>
+            <li><a href="#">Mental Health</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col" data-aos="fade-right">
+          <h4>Contact Us</h4>
+          <ul>
+            <li><i class="fas fa-envelope"></i> support@altibbe.com</li>
+            <li><i class="fas fa-phone"></i> +91-98765-43210</li>
+            <li><i class="fas fa-map-marker-alt"></i> Hyderabad, India</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Altibbe. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      AOS.init()
+    </script>
   </body>
 </html>
